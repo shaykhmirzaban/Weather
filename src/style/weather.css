@@ -1,0 +1,141 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../images/tom-barrett-hgGplX3PFBg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .col1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem;
+}
+.main .col1 h4 {
+  font-size: 1rem;
+  color: #eee;
+}
+.main .col1 h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+.main .col2 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #000e15b3;
+  box-shadow: inset 0 0 20px 3px #000e15;
+}
+.main .col2 .search {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .col2 .search input {
+  width: 75%;
+  height: 35px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #4b646f;
+  background: transparent;
+  color: #e2f0f6;
+}
+.main .col2 .search button {
+  width: 80px;
+  height: 40px;
+  font-size: 1rem;
+  background-color: #bd610c; /*#d87716*/
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main .col2 .search button:hover {
+  opacity: 0.5;
+}
+.main .col2 .location {
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 2px solid #acc1c86e;
+}
+.main .col2 .location h3 {
+  color: #718894;
+  padding: 0.5rem 0;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.main .col2 .location .country,
+.city {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  /* border-bottom: 1px solid #acc1c86e; */
+}
+
+.country p,
+.city p {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: #e2f0f6;
+}
+
+.weatherDetail {
+  width: 100%;
+  padding: 1rem 0;
+}
+.weatherDetail h3 {
+  color: #718894;
+  padding: 0.5rem 0;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.weatherDetail .cloudy,
+.humidity,
+.wind {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  /* border-bottom: 1px solid #acc1c86e; */
+}
+.weatherDetail .cloudy p,
+.humidity p,
+.wind p {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: #e2f0f6;
+}
+
+/* responsive style */
+
+@media screen and (max-width: 920px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+  .main .col2 {
+    width: 100%;
+  }
+  .main .col1 {
+    width: 100%;
+  }
+}
